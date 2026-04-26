@@ -26,4 +26,7 @@ Gem::Specification.new do |spec|
   # Uses only stdlib — no runtime gem dependencies.
   spec.add_development_dependency 'minitest', '~> 5.20'
   spec.add_development_dependency 'rake', '~> 13.0'
+  # WEBrick was removed from stdlib in Ruby 3.0+; we use it in tests for a
+  # local stub server. Test-only — runtime SDK doesn't need it.
+  spec.add_development_dependency 'webrick', '~> 1.8'
 end
