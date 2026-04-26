@@ -1,0 +1,9 @@
+*.gem
+.bundle/
+vendor/bundle
+Gemfile.lock
+.idea/
+.vscode/
+.DS_Store
+*.swp
+coverage/
